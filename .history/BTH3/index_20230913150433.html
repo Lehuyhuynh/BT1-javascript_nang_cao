@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Users{
+      constructor(name, username, password){
+        this.name= name;
+        this.username= username;
+        this.password= password;
+      }
+      login(username, password){
+        if(username !=this.username || password !=this.password){return console.log("jdas");
+
+        }
+      }
+      setPassword(oldpassword, newpassword){
+        if(this.password != oldpassword){
+          return console.log("ban nhap sai");
+        }
+        const isverifyPassword = this.isverifyPassword(newpassword)
+        if(!isverifyPassword)
+        {
+          return console.log('password');
+        }
+        this.password = newpassword
+        console.log(" new password", password);
+      }
+
+      verifyPassword(newpassword){
+        if( newpassword.length >= 8) return true
+
+        re
+      }
+    }
+
+    const myA =new Users("HUYNH", "HUYNH", "HUYNH123")
+    console.log(22, myA);
+    myA.login('safnas', 'jdakd')
+    myA.login('HUYNH', 'HUYNH')
+    myA.setPassword("HUYNH", 'HUYNH123')
+  </script>
+</body>
+</html>

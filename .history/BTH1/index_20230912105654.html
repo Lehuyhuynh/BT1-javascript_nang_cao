@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  // Part #1: Làm việc với string // 
+
+  const str1 ='huynh'
+  console.log(`chao ${str1}`);
+
+  // Part #2: Destructuring objects
+
+  const obj = {
+    name: 'name',
+    age: 49
+  }
+
+  let {name, age} = obj
+  console.log(name, age);
+
+  // Part #3: Destructuring objects
+
+  let [ firstName ] = ['Dylan', 'Israel'];
+  console.log(firstName) 
+
+  // Part #4: Object Literal
+
+  const obj1 ={
+    name,
+    age,
+  }
+  console.log(name, age);
+
+  // Part #5: Vòng lặp for… of
+
+  const str2 ="hello world";
+
+  for (const iterator of str2) {
+    console.log(iterator);
+  }
+
+  // Part #6: Spread syntax
+   let str3 = [1,2,3]
+   let str4 = [4,5,6];
+   let str5 = [...str3, ...str4];
+   console.log(str5);
+
+  //  Part #7: Arrow function
+
+  const fuc = num =>{
+    console.log(num*2); 
+  }
+  fuc(5)
+
+  // Part #8: includes()
+
+  let str = 'Hello World';
+
+console.log(str.includes('hello')); // true
+
+  </script>
+</body>
+</html>
